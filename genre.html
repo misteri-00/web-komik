@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KomikWeb - Beranda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="Index.html">
+                    <img src="Menu/WhatsApp_Image_2024-12-01_at_14.45.23_87703b2a-removebg-preview.png" alt="Logo" class="logo-img" >
+                </a>
+            </div>
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    placeholder="Cari Komik..." 
+                    class="search-bar" 
+                    oninput="filterResults()"
+                />
+                <div id="search-dropdown" class="dropdown">
+                    <a href="bacakomik/The Battle of Nations/detailkomik.html">
+                        <div class="result-item">
+                            <img src="bacakomik/The Battle of Nations/img/header the battle.jpg" alt="The Battle of Nations">
+                            <div>
+                                <h4>The Battle of Nations: I will subdue the world through pangu</h4>
+                                <p>Action, Drama, Fantasy, Historical</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="bacakomik/boruto blue vortex/detailkomik.html">
+                        <div class="result-item">
+                            <img src="bacakomik/boruto blue vortex/img/Head-Boruto-Two-Blue-Vortex.jpg" alt="boruto blue vortex">
+                            <div>
+                                <h4>Boruto Two Blue Vortex</h4>
+                                <p>Action, Adventure, Comedy, Drama, Fantasy, Martial Arts, Shounen</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="bacakomik/Solo Leveling/detailkomik.html">
+                        <div class="result-item">
+                            <img src="bacakomik/Solo Leveling/img/Head-I-Alone-Leveling.jpg" alt="Solo Leveling">
+                            <div>
+                                <h4>Solo Leveling</h4>
+                                <p> 
+                                    Action, Adventure, Drama, Fantasy</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="bacakomik/necromancer  academi/detailkomik.html">
+                        <div class="result-item">
+                            <img src="bacakomik/necromancer  academi/img/Head-Necromancer-Academys-Genius-Summoner.jpg" alt="Necromancer Academy Summoner">
+                            <div>
+                                <h4>Necromancer Academy Summoner</h4>
+                                <p> 
+                                    Action, Adventure, Comedy, Drama</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="bacakomik/Blue Lock/detailkomik.html">
+                        <div class="result-item">
+                            <img src="bacakomik/Blue Lock/img/bluelock header.jpg" alt="Blue Lock">
+                            <div>
+                                <h4>Blue Lock</h4>
+                                <p>Action, Drama, Shounen, Sports</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="daftar_komik.html">Daftar Komik</a></li>
+                    <li><a href="genre.html">Genre</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h2 class="pilih">Pilih Genre Favorit Anda</h2>
+        <div class="genre-grid">
+            <button class="genre-button" onclick="filterGenre('Action')">Action</button>
+            <button class="genre-button" onclick="filterGenre('Adventure')">Adventure</button>
+            <button class="genre-button" onclick="filterGenre('Shounen')">Shounen</button>
+            <button class="genre-button" onclick="filterGenre('Fantasy')">Fantasy</button>
+            <button class="genre-button" onclick="filterGenre('Historical')">Historical</button>
+            <button class="genre-button" onclick="filterGenre('Comedy')">Comedy</button>
+            <button class="genre-button" onclick="filterGenre('Drama')">Drama</button>
+            <button class="genre-button" onclick="filterGenre('School Life')">School Life</button>
+            <button class="genre-button" onclick="filterGenre('all')">Tampilkan Semua</button>
+        </div>
+        
+        <section id="filtered-komik">
+            <h2>Komik Berdasarkan Genre</h2>
+            <div class="komik-grid">
+                <div class="komik-card" data-genre="Action, Drama, Fantasy, Historical, School Life">
+                <a href="bacakomik/The Battle of Nations/detailkomik.html">
+                    <img src="bacakomik/The Battle of Nations/img/header the battle.jpg" alt="Dungeon Harem Made...">
+                <div class="manhua-info">
+                    <span class="label">MANHUA</span>
+                    <h3>The Battle of Nations</h3>
+                    <p>Ch 05 <span class="date">2 Des 2024</span></p>
+                    <p>Ch 04 <span class="date">2 Des 2024</span></p>
+                    <span class="baca">baca sekarang</span>
+                </div>
+                </a>
+                </div>
+
+                <div class="komik-card" data-genre="Action, Comedy, Drama, Fantasy, Martial Arts, Shounen">
+                <a href="bacakomik/boruto blue vortex/detailkomik.html">
+                    <img src="bacakomik/boruto blue vortex/img/Head-Boruto-Two-Blue-Vortex.jpg" alt="Dungeon Harem Made...">
+                <div class="manhua-info">
+                    <span class="label">MANGA</span>
+                    <h3>Boruto Two Blue Vortex</h3>
+                    <p>Ch 05 <span class="date">2 Des 2024</span></p>
+                    <p>Ch 04 <span class="date">2 Des 2024</span></p>
+                    <span class="baca">baca sekarang</span>
+                </div>
+                </a>
+                </div>
+
+                <div class="komik-card" data-genre="Action, Drama, Shounen, Sports">
+                <a href="bacakomik/Blue Lock/detailkomik.html">
+                    <img src="bacakomik/Blue Lock/img/bluelock header.jpg" alt="Dungeon Harem Made...">
+                <div class="manhua-info">
+                    <span class="label">MANGA</span>
+                    <h3>Blue Lock</h3>
+                    <p>Ch 05 <span class="date">2 Des 2024</span></p>
+                    <p>Ch 04 <span class="date">2 Des 2024</span></p>
+                    <span class="baca">baca sekarang</span>
+                </div>
+                </a>
+                </div>
+
+                <div class="komik-card" data-genre="Action, Adventure, Drama, Fantasy, Shounen, Super Power">
+                <a href="bacakomik/Solo Leveling/detailkomik.html">
+                    <img src="bacakomik/Solo Leveling/img/Head-I-Alone-Leveling.jpg" alt="Dungeon Harem Made...">
+                <div class="manhua-info">
+                    <span class="label">MANHWA</span>
+                    <h3>Necromancer Academy Genius Summoner</h3>
+                    <p>Ch 05 <span class="date">2 Des 2024</span></p>
+                    <p>Ch 04 <span class="date">2 Des 2024</span></p>
+                    <span class="baca">baca sekarang</span>
+                </div>
+                </a>
+                </div>
+
+                <div class="komik-card" data-genre="Action, Adventure, Comedy, Drama">
+                <a href="bacakomik/necromancer  academi/detailkomik.html">
+                    <img src="bacakomik/necromancer  academi/img/Head-Necromancer-Academys-Genius-Summoner.jpg" alt="Dungeon Harem Made...">
+                <div class="manhua-info">
+                    <span class="label">MANHWA</span>
+                    <h3>Solo Leveling</h3>
+                    <p>Ch 05 <span class="date">2 Des 2024</span></p>
+                    <p>Ch 04 <span class="date">2 Des 2024</span></p>
+                    <span class="baca">baca sekarang</span>
+                </div>
+                </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ComKit</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedGenre = urlParams.get('genre');
+
+        function filterGenre(genre) {
+            const komikCards = document.querySelectorAll('.komik-card');
+            komikCards.forEach((card) => {
+                if (genre === 'all' || card.dataset.genre === genre) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        if (selectedGenre) {
+            filterGenre(selectedGenre);
+        }
+    </script>
+</body>
+</html>

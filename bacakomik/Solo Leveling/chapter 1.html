@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KomikWeb - Beranda</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="/Index.html">
+                    <img src="/Menu/WhatsApp_Image_2024-12-01_at_14.45.23_87703b2a-removebg-preview.png" alt="Logo" class="logo-img" >
+                </a>
+            </div>
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    placeholder="Cari Komik..." 
+                    class="search-bar" 
+                    oninput="filterResults()"
+                />
+                <div id="search-dropdown" class="dropdown">
+                    <a href="/bacakomik/The Battle of Nations/detailkomik.html">
+                        <div class="result-item">
+                            <img src="/bacakomik/The Battle of Nations/img/header the battle.jpg" alt="The Battle of Nations">
+                            <div>
+                                <h4>The Battle of Nations: I will subdue the world through pangu</h4>
+                                <p>Action, Drama, Fantasy, Historical</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/bacakomik/boruto blue vortex/detailkomik.html">
+                        <div class="result-item">
+                            <img src="/bacakomik/boruto blue vortex/img/Head-Boruto-Two-Blue-Vortex.jpg" alt="boruto blue vortex">
+                            <div>
+                                <h4>Boruto Two Blue Vortex</h4>
+                                <p>Action, Adventure, Comedy, Drama, Fantasy, Martial Arts, Shounen</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/bacakomik/Solo Leveling/detailkomik.html">
+                        <div class="result-item">
+                            <img src="/bacakomik/Solo Leveling/img/Head-I-Alone-Leveling.jpg" alt="Solo Leveling">
+                            <div>
+                                <h4>Solo Leveling</h4>
+                                <p> Action, Adventure, Drama, Fantasy</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/bacakomik/necromancer  academi/detailkomik.html">
+                        <div class="result-item">
+                            <img src="/bacakomik/necromancer  academi/img/Head-Necromancer-Academys-Genius-Summoner.jpg" alt="Necromancer Academy Summoner">
+                            <div>
+                                <h4>Necromancer Academy Summoner</h4>
+                                <p> 
+                                    Action, Adventure, Comedy, Drama</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/bacakomik/Blue Lock/detailkomik.html">
+                        <div class="result-item">
+                            <img src="/bacakomik/Blue Lock/img/bluelock header.jpg" alt="Blue Lock">
+                            <div>
+                                <h4>Blue Lock</h4>
+                                <p>Action, Drama, Shounen, Sports</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Beranda</a></li>
+                    <li><a href="/daftar_komik.html">Daftar Komik</a></li>
+                    <li><a href="/genre.html">Genre</a></li>
+                    <li><a href="/tentang.html">Tentang Kami</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="headerr">
+        <h1> Solo Leveling Chapter 1 Bahasa Indonesia</h1>
+    </div>
+
+    <div class="comic-reader-container">
+        <!-- Navigasi Chapter -->
+        <div class="chapter-navigation">
+            <select onchange="window.location.href=this.value;" class="chapter-dropdown">
+                <option value="" selected disabled>Pilih Chapter</option>
+                <option value="chapter 0.html">Chapter 0 </option>
+                <option value="chapter 1.html">Chapter 01</option>
+                <option value="chapter 2.html">Chapter 02</option>
+                <option value="chapter 3.html">Chapter 03</option>
+                <option value="chapter 4.html">Chapter 04</option>
+                <option value="chapter 5.html">Chapter 05</option>
+            </select>
+            <div class="chapter nextprev">
+                <a href="chapter 0.html">
+                    <button class="chapter-button ">&laquo; Previous Chapter</button>
+                </a>
+                <a href="detailkomik.html">
+                    <button class="chapter-button "> All Chapter</button>
+                </a>
+                <a href="chapter 2.html">
+                    <button class="chapter-button ">Next Chapter &raquo;</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Banner Informasi -->
+        <div class="info-banner">
+            JANGAN LUPA BELI KOMIK ASLINYA APABILA SUDAH TERSEDIA DI DAERAHMU!
+        </div>
+
+        <!-- Judul dan Thumbnail -->
+        <div class="comic-content">
+            <img itemprop="image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVcREbPwLznjFJq9Ez2l8DvMrWJr5_Om6waax9AO1GDn9xunqg_1ksNrWjdKezHyEzerNmHFsNJiMuHmHAdQo7YvExdJLL_AIKVSBeQvVvyzZ9Z5XwQwgpncSkTHrTFSUM8xgVCs8ZOGPQKj3fSumfNQD_WXCTar5s9N-HmJk9R0oHs6SM6qf_j2_Ki2Y/s16000/01.jpg" alt="Chapter 1" style="width: 50%; height: auto;">
+            <img itemprop="image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbVWn55aMf5tFho9-fEeNzh3ZqQkJxBvxEppMlpO1R9Zvz6zOPv9JfC0MHXpO2PkcExzCBuqwkCoTkmyN3Udsr2Xz8EgNh1JhOo8ewHVkLoT6Dp1m6viFHQF4gl1e6aicRVjmF6KhUhSc2IWX7OeIPcfkXHsLQLgHwjVgmTcFNj4UBHc0Ee75TFMLDxns/s16000/02.jpg" alt="Chapter 1" style="width: 50%; height: auto;">
+            <img itemprop="image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmaaTJnQgA84q54jccSnuYIjfyUs16QSf3_-EMDO8GUZ-5mNsYyslez4Ld_Oz9XdwfMtLRgQt-rjFBVMxpABzdP2jOLrEJPVdeU3o9BhRwhIyTgqy0FCOsKBaXT32k1HoP8l2P1aEWIdhqOK7J9QdBy1bqyZ5cHcYQxjgHHx64jty49uUTkCD49P4DMUc/s16000/03.jpg" alt="Chapter 1" style="width: 50%; height: auto;">
+            <img itemprop="image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwTjOxWQsOpvUesVCgPJBYlZQTV2zLVg0A8hS-9BMa03FqrntgIYlChwzpwXOlCOnzbOGdwL6mK9mnOsdpe6pEgwZesFW1krrTpHIQbX_XHAedCGGELnaZH1w_aAMCU_N_ato0Q3v7LHs9tzYuQzDHiFmIYDOGsQHF_szjrsDVPCz8eA3Rf8MX98LatWk/s16000/04.jpg" alt="Chapter 1" style="width: 50%; height: auto;">
+            <img itemprop="image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz3EEpDvrrM5cby0NmQgmmlC1o8Yq7QZxXHn1OPOngA1Gw5_xXFDJTGREvfX1a2EmUOBbUkm07B49NDf-ptMmZIRfuxtlMOEHDmuJsGbLx9PigdmFPbYi_mWgVCIzP_q7z_QguVMvsL2IBXasK19cuuxPtukiOy15N0L17KpHlOjIb9aMv2TobwvJziDA/s16000/05.jpg" alt="Chapter 1" style="width: 50%; height: auto;">
+            <img itemprop="image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5bD3GsypWRWhNUvwZ8lEa1ms88MfTTR4xlRIt_TsVbwkzjiP0g35YYiLdliYNE8R3AswlkX8e1AJ5of0yQlmChWvqutvdpLxDKPJUWkJe5OL5RgXAAUrkLTuZtjUPjad_sDU7EgsnwcHoNp7HlURmEEO_aiO3UrfRjVhjOGYXYIsqix5R-Ubx2b2Qpgk/s16000/06.jpg" alt="Chapter 1" style="width: 50%; height: auto;">
+            <img itemprop="image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXfLrJw4nnLHGjDVCDVFcH7IgUwMZRLdDWjNAun2dvrlAZisNgIXb3NXTew8sQNXTjyBHR1y-hHW-Pwcn98ZEU-d7vXn-b5Rg36TdVDEVXWaQztQcgSGe9jMcCCYqSHb3C7Og2lNXKWHJcOCsDLe4-RqREBoWgUgLkqo5DssmdZBi6JDbkEzi7FTZYJvs/s16000/07.jpg" alt="Chapter 1" style="width: 50%; height: auto;">
+
+        </div>
+    </div>
+    <script src="/script.js"></script>
+    <footer>
+        <p>&copy; 2024 ComKit</p>
+    </footer>
+</body>
+</html>

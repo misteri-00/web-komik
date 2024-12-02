@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KomikWeb - Beranda</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="/Index.html">
+                    <img src="/Menu/WhatsApp_Image_2024-12-01_at_14.45.23_87703b2a-removebg-preview.png" alt="Logo" class="logo-img" >
+                </a>
+            </div>
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    placeholder="Cari Komik..." 
+                    class="search-bar" 
+                    oninput="filterResults()"
+                />
+                <div id="search-dropdown" class="dropdown">
+                    <a href="/bacakomik/The Battle of Nations/detailkomik.html">
+                        <div class="result-item">
+                            <img src="/bacakomik/The Battle of Nations/img/header the battle.jpg" alt="The Battle of Nations">
+                            <div>
+                                <h4>The Battle of Nations: I will subdue the world through pangu</h4>
+                                <p>Action, Drama, Fantasy, Historical</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/bacakomik/boruto blue vortex/detailkomik.html">
+                        <div class="result-item">
+                            <img src="/bacakomik/boruto blue vortex/img/Head-Boruto-Two-Blue-Vortex.jpg" alt="boruto blue vortex">
+                            <div>
+                                <h4>Boruto Two Blue Vortex</h4>
+                                <p>Action, Adventure, Comedy, Drama, Fantasy, Martial Arts, Shounen</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/bacakomik/Solo Leveling/detailkomik.html">
+                        <div class="result-item">
+                            <img src="/bacakomik/Solo Leveling/img/Head-I-Alone-Leveling.jpg" alt="Solo Leveling">
+                            <div>
+                                <h4>Solo Leveling</h4>
+                                <p> Action, Adventure, Drama, Fantasy</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/bacakomik/necromancer  academi/detailkomik.html">
+                        <div class="result-item">
+                            <img src="/bacakomik/necromancer  academi/img/Head-Necromancer-Academys-Genius-Summoner.jpg" alt="Necromancer Academy Summoner">
+                            <div>
+                                <h4>Necromancer Academy Summoner</h4>
+                                <p> 
+                                    Action, Adventure, Comedy, Drama</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/bacakomik/Blue Lock/detailkomik.html">
+                        <div class="result-item">
+                            <img src="/bacakomik/Blue Lock/img/bluelock header.jpg" alt="Blue Lock">
+                            <div>
+                                <h4>Blue Lock</h4>
+                                <p>Action, Drama, Shounen, Sports</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Beranda</a></li>
+                    <li><a href="/daftar_komik.html">Daftar Komik</a></li>
+                    <li><a href="/genre.html">Genre</a></li>
+                    <li><a href="/tentang.html">Tentang Kami</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="headerr">
+            <h1>The Battle of Nations: I will subdue the world through pangu Bahasa Indonesia</h1>
+        </div>
+        <div class="content">
+            <img src="img/header the battle.jpg" alt="The Battle of Nations">
+            <div class="details">
+                <span class="badge">MANHUA</span>
+                <div class="buttons">
+                    <span class="button active" onclick="showTab('info')">Info</span>
+                    <span class="button" onclick="showTab('sinopsis')">Sinopsis</span>
+                </div>
+                
+                <div class="info active">
+                    <p><strong>Release:</strong> 2024</p>
+                    <p><strong>Alternative:</strong> 国运之战：我以盘古镇诸天</p>
+                    <p><strong>Status:</strong> OnGoing</p>
+                    <p><strong>Author(s):</strong> -</p>
+                    <p><strong>Tag(s):</strong> Updating</p>
+                </div>
+                
+                <div class="sinopsis">
+                    <p>
+                        Manhua The Battle of Nations: I will subdue the world through Pangu yang dibuat oleh komikus bernama 北方巨兽 ini bercerita tentang Qi spiritual bangkit kembali, arena mitologis turun, para dewa dari masing-masing negara tiba, Sakura membangunkan Amaterasu Omikami, Federasi Elang memanggil Odin, dan Shila memanggil Zeus. Hanya orang Cina yang hilang, membuat mereka dalam bahaya! Saya telah menjelajahi dunia, dan saya tahu semua sejarah. Saya telah memanggil Pangu Agung! Dewa dilarang di Cina!
+                    </p>
+                    <div class="genre-grid">
+                        <a href="/genre.html">
+                            <button class="genre-button" onclick="filterGenre('Action')">Action</button>
+                            <button class="genre-button" onclick="filterGenre('Drama')">Drama</button>
+                            <button class="genre-button" onclick="filterGenre('School Life')">School Life</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="headerr">
+        <h1>CHAPTER</h1>
+    </div>
+    <div class="chapterr">
+        <a href="chapter1.html">
+            <button class="chapterbutton" >chapter 1</button>
+        </a>
+        <a href="chapter2.html">
+            <button class="chapterbutton" >chapter 2</button>
+        </a>
+        <a href="chapter3.html">
+            <button class="chapterbutton" >chapter 3</button>
+        </a>
+        <a href="chapter4.html">
+            <button class="chapterbutton" >chapter 4</button>
+        </a>
+        <a href="chapter5.html">
+            <button class="chapterbutton" >chapter 5</button>
+        </a>
+    </div>
+<script src="/script.js"></script>
+
+<footer>
+    <p>&copy; 2024 ComKit</p>
+</footer>
+</body>
+</html>
