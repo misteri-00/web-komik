@@ -12,7 +12,14 @@ body {
     line-height: 1.6;
 }
 /* Menyesuaikan desain untuk perangkat dengan lebar layar kurang dari 768px */
+/* Responsive Styles */
 @media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -20,53 +27,50 @@ body {
 
     .navbar ul {
         flex-direction: column;
-        width: 100%;
-        text-align: left;
+        gap: 10px;
     }
 
     .navbar ul li {
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
-    .komik-grid, .manhua-grid-container {
-        grid-template-columns: 1fr;
+    header {
+        text-align: center;
     }
 
-    .komik-card, .manhua-card {
+    .komik-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .komik-card {
         width: 100%;
-    }
-
-    .slideshow-container {
-        height: 250px; /* Menyesuaikan tinggi untuk layar lebih kecil */
-    }
-
-    .chapterbutton {
-        padding: 10px 20px;
-        font-size: 16px;
+        max-width: 200px;
+        margin: 0 auto;
     }
 
     .details {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .content img {
-        max-width: 100%;
-        height: auto;
+        padding: 15px;
+        border-radius: 10px;
     }
 
     .about-highlights {
         flex-direction: column;
-        gap: 15px;
     }
 
     .highlight-item {
         width: 100%;
+    }
+
+    .manhua-grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .chapterbutton {
+        font-size: 18px;
+        padding: 10px;
+        margin-top: 20px;
     }
 
     .search-container {
@@ -77,75 +81,55 @@ body {
         font-size: 14px;
     }
 
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .comic-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comic-thumbnail img {
+        max-width: 150px;
+        margin-bottom: 20px;
+    }
+
     .chapter {
         flex-direction: column;
         align-items: stretch;
     }
 
-    .info-banner {
+    .chapter-button {
         font-size: 12px;
-        padding: 8px;
-    }
-
-    .chapter-navigation .chapter-button {
-        font-size: 12px;
-        padding: 8px 15px;
-    }
-}
-
-/* Menyesuaikan desain untuk perangkat dengan lebar layar kurang dari 480px */
-@media (max-width: 480px) {
-    header {
-        text-align: center;
-        padding: 1rem;
-    }
-
-    .logo-img {
-        height: 50px;
-    }
-
-    .slideshow-container {
-        height: 200px;
-    }
-
-    .chapterbutton {
-        font-size: 14px;
-        padding: 8px 15px;
-    }
-
-    .komik-card img, .manhua-card img {
-        height: auto;
-    }
-
-    footer {
-        font-size: 14px;
-    }
-
-    .highlight-item {
-        padding: 15px;
-    }
-
-    .daftark {
-        font-size: 30px;
-    }
-
-    .genre-button {
-        padding: 8px 15px;
-        font-size: 12px;
+        width: 100%;
     }
 
     .dropdown {
         font-size: 12px;
     }
 
-    .result-item h4 {
-        font-size: 12px;
+    .slideshow-container {
+        height: 250px;
     }
 
-    .result-item p {
-        font-size: 10px;
+    .chapter-navigation {
+        flex-direction: column;
+        align-items: center;
     }
 }
+
 
 
 header {
