@@ -11,82 +11,68 @@ body {
     color: #333;
     line-height: 1.6;
 }
-/* Media Queries untuk perangkat mobile */
-@media (max-width: 768px) {
-    .navbar {
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
-    .logo-img {
-        height: 80px; /* Menyesuaikan ukuran logo */
+    .komik-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .daftark {
-        font-size: 30px; /* Mengurangi ukuran font untuk judul */
-        margin-bottom: 30px; /* Mengurangi margin bawah */
-    }
-
-    .komik-grid, .manhua-grid-container {
-        flex-direction: column; /* Menyusun grid secara vertikal */
-    }
-
-    .komik-card, .manhua-card {
-        width: 100%; /* Mengatur lebar kartu menjadi 100% */
-    }
-
-    .genre-grid {
-        flex-direction: column; /* Menyusun genre secara vertikal */
-    }
-
-    .genre-button {
-        width: 100%; /* Mengatur lebar tombol genre menjadi 100% */
-        margin-bottom: 10px; /* Menambahkan margin bawah */
+    .komik-card {
+        width: 100%;
     }
 
     .slideshow-container {
-        height: 200px; /* Mengurangi tinggi slideshow */
+        height: 200px;
     }
 
-    .content {
-        flex-direction: column; /* Menyusun konten secara vertikal */
+    .komik-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .details {
-        padding: 10px; /* Mengurangi padding untuk detail */
+    .manhua-grid-container {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .details h2 {
-        font-size: 1.2em; /* Mengurangi ukuran font untuk heading */
-    }
-
-    .comic-thumbnail img {
-        max-width: 100%; /* Mengatur gambar thumbnail menjadi responsif */
-    }
-
-    .chapter-navigation {
-        flex-direction: column; /* Menyusun navigasi chapter secara vertikal */
-    }
-
-    .chapter-button {
-        width: 100%; /* Mengatur lebar tombol chapter menjadi 100% */
-        margin-bottom: 10px; /* Menambahkan margin bawah */
+    .search-bar {
+        padding: 10px;
     }
 
     .search-container {
-        width: 100%; /* Mengatur lebar search bar menjadi 100% */
+        width: 100%;
     }
 
-    .about-highlights {
-        flex-direction: column; /* Menyusun highlight secara vertikal */
+    .navbar {
+        flex-direction: column;
     }
 
-    .highlight-item {
-        width: 100%; /* Mengatur lebar highlight item menjadi 100% */
+    footer {
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .komik-grid {
+        grid-template-columns: 1fr;
     }
 
-    .gif {
-        text-align: center; /* Memastikan GIF tetap terpusat */
+    .komik-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar ul {
+        text-align: center;
+        margin: 0;
+    }
+
+    .search-bar {
+        padding: 8px;
+        font-size: 14px;
     }
 }
 
